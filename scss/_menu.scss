@@ -112,6 +112,7 @@
         
         &.current > a {
             color: darken($tertiary-color,5);
+            font-weight: 400;
         }
     }
 
@@ -128,6 +129,7 @@
 
         &:hover {
             color: darken($tertiary-color,5);
+            font-weight: 400;
         }
     }
 }
