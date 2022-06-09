@@ -116,6 +116,8 @@
         }
     }
 
+    // Codepen - Menu hover effect
+    // https://codepen.io/alvarotrigo/pen/PoKMyNO
     .nav-link {
         display: inline-block;
         position: relative;
@@ -128,8 +130,28 @@
         @include easeOut;
 
         &:hover {
-            color: darken($tertiary-color,5);
             font-weight: 400;
+            background-image: linear-gradient(
+              -50deg,
+              #231557 0%,
+              #490394 14%,
+              #5c001f 29%,
+              #a00035 58%,
+              #5c001f 76%,
+              #490394 92%,
+              #231557 100%,
+            );
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+        }
+
+        @keyframes textclip {
+          to {
+            background-position: 200% center;
+          }
         }
     }
 }

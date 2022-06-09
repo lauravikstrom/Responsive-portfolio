@@ -50,7 +50,6 @@ header {
 }
 
 main {
-    //padding: 4rem;
     min-height: calc(100vh - 60px);
 
     .icons {
@@ -81,6 +80,8 @@ main {
     }
 }
 
+
+// About
 .about-bio {
     padding: 4rem;
 }
@@ -90,21 +91,48 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-    'bioimage bio bio'
+    'bio bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
-
-    .bio-image {
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
-        border: $tertiary-color 3px solid;
-    }
     
     .bio {
         grid-area: bio;
         font-weight: 400;
         font-size: larger;
+    }
+
+    .mylist a {
+        margin-right: 3rem;
+        padding-bottom: 0.5rem;
+        border-bottom: solid #b9b9b9 1.5px;
+        @include easeOut;
+
+        &:hover {
+            border-color: #030303;
+            @include easeOut;
+        }
+    }
+
+    .mylist {
+        padding-right: 1rem;
+        display: grid;
+        grid-template-areas: 
+        'p1 p1 p1 p1 p1'
+        'a1 a2 a3 a3 a3';
+        grid-template-columns: repeat(6, 1fr);
+    
+        .p1 {
+            grid-area: p1;
+        }
+        .a1 {
+            grid-area: a1;
+        }
+        .a2 {
+            grid-area: a2;
+        }
+        .a3 {
+            grid-area: a3;
+        }
     }
     
     .job-1 {
@@ -135,7 +163,6 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     background-attachment: fixed;
 }
 
@@ -211,7 +238,7 @@ main {
         font-size: 2rem;
         border: 3px #fff solid;
         padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
         @include easeOut;
 
         &:hover {
