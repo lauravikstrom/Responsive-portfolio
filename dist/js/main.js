@@ -1,4 +1,4 @@
-// Selct DOM items
+// Select DOM items
 
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
@@ -11,7 +11,7 @@ let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
 
-function toggleMenu() {
+function toggleMenu() { 
     if(!showMenu) {
         menuBtn.classList.add('close');
         menu.classList.add('show');
