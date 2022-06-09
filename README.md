@@ -31,7 +31,9 @@ By clicking Contact you can see ways to contact me. There are listed my email, p
 
 
 CREDITS
+
 On Exercise materials.docx you can find the material I've used to build the page. There are Traversy Media's Youtube videos which were foundation of my project. Thank you for Traversy Media of these videos. If you want to build website like this I advise you to watch the videos. I've listed other materials I've used to the .docx too.
 
 HELP?
+
 If you have any questions for me you can reach me by email, phone or LinkedIn which are listed on the Contact page.
